@@ -1,0 +1,18 @@
+<h1 align="center">Details Page</h1>
+<hr>
+<table border="1" align="center">
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Address</th>
+</tr>
+<% @re.each do |f| %>
+	<tr>
+	<td><%= f.name %></td>
+	<td><%= f.age %></td>
+	<td><%= f.address %></td>
+	</tr>
+	<% end %>
+</table>
+
+<h2 align="center"><%= link_to "Registration Page",tables_first_path %></h2>

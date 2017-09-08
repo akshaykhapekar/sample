@@ -1,0 +1,10 @@
+<%= form_for @teach,url:{action: "create"} do |f| %>
+
+<p>Name:<%= f.text_field :name %></p>
+<p>Subject:<%= f.text_field :subject %></p>
+<p>Email_id:<%= f.email_field :email %></p>
+<p>Gender:<%= f.radio_button :gender, "Male" %> Male
+          <%= f.radio_button :gender, "Female" %> Female
+          </p>
+<p><%= f.submit %></p>
+<% end %>

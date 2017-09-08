@@ -1,0 +1,28 @@
+<h1 align="center">SignUp Page</h1>
+<hr>
+<%= form_tag ('/logins/retrive') do %>
+<p><b>Firstname:-</b><%= text_field_tag 'firstname' %></p>
+<p><b>Lastname:-</b><%= text_field_tag 'lastname' %></p>
+<p><b>Gender:-</b><%= radio_button_tag 'gender',"Male" %>Male
+                  <%= radio_button_tag 'gender',"Female" %>Female</p>
+<p><b>Age:-</b><%= number_field_tag 'age' %></p>
+<p><b>Email_id:-</b><%= email_field_tag 'email_id' %></p>
+<p><b>Mobile_no:-</b><%= phone_field_tag 'mobile_no' %></p>
+<p><b>Username:-</b><%= text_field_tag 'username' %></p>
+<p><b>Password:-</b><%= password_field_tag 'password' %></p>
+<p><b>Hobby:-</b><%= check_box_tag 'hobby' "Cricket" %>Cricket
+                 <%= check_box_tag 'hobby' "Football" %>Football</p>
+<p><b>Subjects:-</b><%= select_tag 'subjects'%></p>
+<%= submit_tag "Login" %>
+<% end %>
+<hr>
+<h2 align="center"><%= link_to "Show Details",logins_retrive_path %></h2>
+<!--<hr>
+<h1>Login Information</h1>
+<p><b>Firstname:-</b><%= @Firstname %></p>
+<p><b>Lastname:-</b><%= @Lastname %></p>
+<p><b>Age:-</b><%= @Age %></p>
+<p><b>Email_id:-</b><%= @Email_id %></p>
+<p><b>Mobile_no:-</b><%= @Mobile_no %></p>
+<p><b>Username:-</b><%= @Username %></p>
+<p><b>Password:-</b><%= @Password %></p>-->

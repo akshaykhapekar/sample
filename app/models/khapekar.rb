@@ -1,0 +1,2 @@
+class Khapekar < ApplicationRecord
+end

@@ -1,0 +1,22 @@
+<h1 align="center">Dilip Page</h1>
+<hr>
+<%= form_tag ('/family/rekha')do %>
+<p><b><%= label_tag 'name:-' %></b>
+<%= text_field_tag 'name' %></p>
+<p><b><%= label_tag 'gender:-' %></b>
+      <%= radio_button_tag 'gender', 'male' %>Male
+      <%= radio_button_tag 'gender', 'female' %>Female</p>
+<p><b><%= label_tag 'age:-' %></b>
+<%= number_field_tag 'age' %></p>
+<p><b><%= label_tag 'email_id:-' %></b>
+<%= email_field_tag 'email_id' %></p>
+<p><b><%= label_tag 'username:-' %></b>
+<%= text_field_tag 'username' %></p>
+<p><b><%= label_tag 'password:-' %></b>
+<%= password_field_tag 'password' %></p>
+<p><b><%= label_tag 'mobile_no:-' %></b>
+<%= phone_field_tag 'mobile_no' %></p>
+<p><%= submit_tag "login" %></p>
+<% end %>
+<hr>
+<h1 align="center"><%= link_to "Sweety Page",family_sweety_path %></h1>

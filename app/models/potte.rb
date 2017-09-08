@@ -1,0 +1,2 @@
+ class Potte < ApplicationRecord
+end

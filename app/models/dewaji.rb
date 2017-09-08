@@ -1,0 +1,2 @@
+class Dewaji < ApplicationRecord
+end

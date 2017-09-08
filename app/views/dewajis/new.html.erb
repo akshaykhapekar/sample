@@ -1,0 +1,16 @@
+<hr>
+<h1 align="center">Registration</h1>
+<hr>
+<%= form_for @satya,url:{action:"create"} do |f| %>
+<div class="errors">
+	<% if @satya.errors.present? %>
+		<% @satya.errors.full_messages.each do |error| %>
+			<p><%= error %></p>
+		<% end %>
+	<% end %>
+</div>
+	<%= render partial: "form", locals: {f: f} %>
+<% end %>
+<hr>
+<h1 align="center"><%= link_to "Details Page",dewajis_path %></h1>
+<hr>

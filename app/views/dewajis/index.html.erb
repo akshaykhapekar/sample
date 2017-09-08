@@ -1,0 +1,33 @@
+<h1 align="center">Registration Details</h1>
+<hr>
+<%= form_tag do %>
+	<p align="center"><%= text_field_tag :search %> <%= submit_tag "search" %></p>
+<% end %>
+<table align="center" border="1">
+<tr>
+<th>Name</th>
+<th>Gender</th>
+<th>Age</th>
+<th>Subject</th>
+<th>Address</th>
+<th>Email_id</th>
+<th>Phone_no</th>
+<th>Actions</th>
+</tr>
+<% @satya.each do |kha| %>
+	<tr>
+	    <td><%= kha.name %></td>
+	    <td><%= kha.gender %></td>
+	    <td><%= kha.age %></td>
+	    <td><%= kha.subject %></td>
+	    <td><%= kha.address %></td>
+	    <td><%= kha.email_id %></td>
+	    <td><%= kha.phone_no %></td>
+	    <td><%= link_to "Show",dewaji_path(kha) %>
+	    	<%= link_to "Edit",edit_dewaji_path(kha)%>
+	    	<%= link_to "Delete",dewaji_path(kha),:method => "delete",data: {confirm: "Are you sure akshay?"} %></td>
+	</tr>
+	<% end %>
+</table>
+<hr>
+<h1 align="center"><%= link_to "New Registration",new_dewaji_path %></h1>

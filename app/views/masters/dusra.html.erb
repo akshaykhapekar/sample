@@ -1,0 +1,9 @@
+<h1 align="center">Dusra Page</h1>
+<hr>
+<% @poo.each do |aks| %>
+Name : <%= aks.name %>
+Age : <%= aks.age %> 
+Address : <%= aks.address %><br />
+<% end %>
+<hr>
+<h1 align="center"><%= link_to "Pahila Page",masters_pahila_path %></h1>

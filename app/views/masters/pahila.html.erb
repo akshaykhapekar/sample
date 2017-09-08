@@ -1,0 +1,13 @@
+<h1 align="center">Pahila Page</h1>
+<hr>
+<%= form_tag ('/masters/dusra') do %>
+<p><b><%= label_tag 'name:-' %></b>
+<%= text_field_tag 'name' %></p>
+<p><b><%= label_tag 'age:-' %></b>
+<%= number_field_tag 'age' %></p>
+<p><b><%= label_tag 'address:-' %></b>
+<%= text_area_tag 'address' %></p>
+<p><%= submit_tag "submit" %></p>
+<% end %>
+<hr>
+<h1 align="center"><%= link_to "Tisra Page",masters_tisra_path %></h1>

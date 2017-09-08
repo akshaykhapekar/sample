@@ -1,0 +1,13 @@
+<h1 align="center">Registration Page</h1>
+<hr>
+<%= form_tag ('/registrations/retrive')do %>
+<p><b>Name:</b><%= text_field_tag 'name' %></p>
+<p><b>Age:</b><%= number_field_tag 'age' %></p>
+<p><b>Address:</b><%= text_field_tag 'address' %></p>
+<%= submit_tag 'Register' %>
+<% end %>
+<hr>
+<h1 align="center">Registration Details</h1>
+<p><b>Name:</b><%= @reg.name %></p>
+<p><b>Age:</b><%= @reg.age %></p>
+<p><b>Address:</b><%= @reg.address %></p>

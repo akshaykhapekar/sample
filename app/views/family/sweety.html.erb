@@ -1,0 +1,26 @@
+<h1 align="center">Sweety Table</h1>
+<hr>
+<table align="center" border="1">
+<tr>
+<th>Name</th>
+<th>Gender</th>
+<th>Age</th>
+<th>Email_id</th>
+<th>Username</th>
+<th>Password</th>
+<th>Mobile_no</th>
+</tr>
+<% @po.each do |kha| %>
+	<tr>
+	    <td><%= kha.name %></td>
+	    <td><%= kha.gender %></td>
+	    <td><%= kha.age %></td>
+	    <td><%= kha.email_id %></td>
+	    <td><%= kha.username %></td>
+	    <td><%= kha.password %></td>
+	    <td><%= kha.mobile_no %></td>
+	</tr>
+	<% end %>
+</table>
+<hr>
+<h1 align="center"><%= link_to "Dilip Page",family_dilip_path %></h1>

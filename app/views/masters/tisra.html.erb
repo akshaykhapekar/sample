@@ -1,0 +1,18 @@
+<h1 align="center">Tisra Page Table</h1>
+<hr>
+<table align="center" border="1">
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Address</th>
+	</tr>
+<% @po.each do |kha| %>
+	<tr>
+	    <td><%= kha.name %></td>
+	    <td><%= kha.age %></td>
+	    <td><%= kha.address %></td>
+	</tr>
+	<% end %>
+</table>
+<hr>
+<h1 align="center"><%= link_to "Pahila Page",masters_pahila_path %></h1>

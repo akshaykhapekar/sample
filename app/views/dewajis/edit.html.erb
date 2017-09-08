@@ -1,0 +1,7 @@
+<h1 align="center">Update Page</h1>
+<hr>
+<%= form_for @satya,url:{action:"update"} do |f| %>
+	<%= render partial: "form", locals: {f: f} %>
+<% end %>
+<hr>
+<h1 align="center"><%= link_to "Back",dewajis_path %></h1>
